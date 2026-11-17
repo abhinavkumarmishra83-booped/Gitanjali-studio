@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Maa Gitanjali Photography Studio & Lab | Saharsa</title>
+  <meta name="description" content="Maa Gitanjali Photography Studio - Complete Studio Printing, Photobooks, Frames, Camera Gear, Wedding Cinema & Event Photography in Saharsa." />
+
+  <!-- Google Fonts: Cursive + Anton + Clean UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@700&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    :root {
+      --glacier: #ABD7F7;
+      --navy: #061B3D;
+      --lemon: #F4F500;
+      --white: #ffffff;
+      --card-bg: #092147;
+      --border-clr: rgba(171, 215, 247, 0.2);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--navy);
+      color: var(--white);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      padding-bottom: 85px;
+    }
+
+    /* ================= BILLBOARD HERO ================= */
+    .billboard-hero {
+      position: relative;
+      background: linear-gradient(180deg, #b8dff9 0%, var(--glacier) 100%);
+      color: var(--navy);
+      min-height: 92vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px 18px 0;
+      overflow: hidden;
+    }
+
+    .bb-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 20;
+    }
+
+    .dots-menu {
+      display: grid;
+      grid-template-columns: repeat(2, 6px);
+      gap: 4px;
+      cursor: pointer;
+      padding: 6px;
+    }
+    .dots-menu span {
+      width: 6px;
+      height: 6px;
+      background: var(--navy);
+      border-radius: 50%;
+    }
+
+    .bb-links {
+      display: flex;
+      gap: 12px;
+    }
+    .bb-links a {
+      text-decoration: none;
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 700;
+      opacity: 0.85;
+    }
+
+    .bb-top-cta {
+      background: var(--lemon);
+      color: var(--navy);
+      padding: 8px 14px;
+      border-radius: 50px;
+      font-size: 11.5px;
+      font-weight: 800;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      box-shadow: 0 6px 16px rgba(6, 27, 61, 0.15);
+    }
+
+    .studio-signature {
+      text-align: center;
+      margin-top: 10px;
+      z-index: 15;
+      position: relative;
+    }
+
+    .studio-cursive {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(38px, 9vw, 62px);
+      color: var(--navy);
+      line-height: 1.05;
+      text-shadow: 2px 3px 0px rgba(255, 255, 255, 0.6);
+    }
+
+    .studio-sub-cursive {
+      font-family: 'Caveat', cursive;
+      font-size: clamp(19px, 4.2vw, 25px);
+      font-weight: 700;
+      color: var(--navy);
+      background: rgba(244, 245, 0, 0.75);
+      display: inline-block;
+      padding: 1px 16px;
+      border-radius: 50px;
+      transform: rotate(-2deg);
+      margin-top: -4px;
+    }
+
+    .bb-main {
+      position: relative;
+      max-width: 980px;
+      width: 100%;
+      margin: 10px auto 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      z-index: 10;
+      flex-grow: 1;
+    }
+
+    @media (min-width: 768px) {
+      .bb-main {
+        grid-template-columns: 1.1fr 0.9fr;
+        padding: 10px 20px 40px;
+      }
+      .studio-signature {
+        text-align: left;
+        max-width: 980px;
+        margin: 14px auto 0;
+        padding: 0 20px;
+        width: 100%;
+      }
+    }
+
+    .bb-text-area {
+      position: relative;
+      z-index: 12;
+      padding: 8px 4px;
+    }
+
+    .tilted-stack {
+      transform: rotate(-4.5deg);
+      transform-origin: left center;
+      margin-bottom: 14px;
+    }
+
+    .bb-word-top {
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(48px, 12vw, 88px);
+      line-height: 0.92;
+      color: var(--navy);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      display: block;
+    }
+
+    .bb-word-highlight {
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(48px, 12vw, 88px);
+      line-height: 0.95;
+      color: var(--navy);
+      background: var(--lemon);
+      display: inline-block;
+      padding: 4px 16px 6px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-top: 4px;
+      box-shadow: 6px 8px 0px rgba(6, 27, 61, 0.14);
+    }
+
+    .brush-underline {
+      width: 180px;
+      height: 16px;
+      margin-top: 6px;
+      display: block;
+    }
+
+    .bb-tagline {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.4;
+      margin-bottom: 18px;
+      max-width: 340px;
+    }
+
+    .bb-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .btn-navy-pill {
+      background: var(--navy);
+      color: var(--lemon);
+      padding: 13px 22px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 800;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 10px 22px rgba(6, 27, 61, 0.28);
+    }
+
+    .btn-reel {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 800;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 50px;
+      background: rgba(255, 255, 255, 0.45);
+      backdrop-filter: blur(6px);
+    }
+
+    .play-circle {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 2px solid var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9px;
+    }
+
+    .bb-collage {
+      position: relative;
+      height: 290px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-top: 6px;
+    }
+
+    .yellow-sun {
+      position: absolute;
+      top: 10px;
+      right: 12%;
+      width: 125px;
+      height: 125px;
+      background: var(--lemon);
+      border-radius: 50%;
+      z-index: 1;
+      box-shadow: 0 0 40px rgba(244, 245, 0, 0.6);
+    }
+
+    .main-subject-card {
+      position: relative;
+      z-index: 3;
+      width: 220px;
+      height: 265px;
+      border-radius: 26px 26px 0 0;
+      overflow: hidden;
+      border: 4px solid var(--navy);
+      box-shadow: 0 18px 35px rgba(6, 27, 61, 0.35);
+      background: var(--navy);
+    }
+
+    .main-subject-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .polaroid-card {
+      position: absolute;
+      bottom: 24px;
+      right: 6%;
+      z-index: 6;
+      background: var(--white);
+      padding: 6px 6px 18px;
+      border-radius: 6px;
+      width: 115px;
+      transform: rotate(6deg);
+      box-shadow: 0 12px 28px rgba(6, 27, 61, 0.4);
+      border: 1px solid rgba(6, 27, 61, 0.1);
+    }
+
+    .polaroid-card img {
+      width: 100%;
+      height: 75px;
+      object-fit: cover;
+      display: block;
+      border-radius: 3px;
+    }
+
+    .polaroid-caption {
+      font-family: 'Caveat', cursive;
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 3px;
+    }
+
+    .pin-badge {
+      position: absolute;
+      top: 42%;
+      right: 4%;
+      z-index: 6;
+      background: var(--navy);
+      color: var(--lemon);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    }
+
+    .navy-wave-divider {
+      position: relative;
+      width: calc(100% + 36px);
+      margin-left: -18px;
+      margin-top: -28px;
+      z-index: 8;
+      line-height: 0;
+    }
+    .navy-wave-divider svg {
+      width: 100%;
+      height: 68px;
+      display: block;
+    }
+
+    /* ================= APP BODY & PROFESSIONAL SECTIONS ================= */
+    .app-body {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 10px 16px 20px;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin: 36px 0 16px;
+    }
+
+    .section-header .cursive-label {
+      font-family: 'Caveat', cursive;
+      color: var(--lemon);
+      font-size: 22px;
+      display: block;
+      line-height: 1;
+    }
+
+    .section-header h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 26px;
+      letter-spacing: 0.8px;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+
+    .pill-tag {
+      background: rgba(171, 215, 247, 0.15);
+      color: var(--glacier);
+      border: 1px solid rgba(171, 215, 247, 0.3);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 50px;
+      white-space: nowrap;
+    }
+
+    .services-pro-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 14px;
+    }
+
+    .srv-pro-card {
+      background: linear-gradient(160deg, #0b2652, var(--card-bg));
+      border: 1px solid var(--border-clr);
+      border-radius: 20px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .srv-pro-card:hover {
+      border-color: var(--lemon);
+      transform: translateY(-2px);
+    }
+
+    .srv-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .srv-icon-box {
+      width: 44px;
+      height: 44px;
+      background: rgba(244, 245, 0, 0.12);
+      color: var(--lemon);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      border: 1px solid rgba(244, 245, 0, 0.3);
+    }
+
+    .srv-badge-tag {
+      font-size: 10px;
+      font-weight: 800;
+      background: rgba(171, 215, 247, 0.15);
+      color: var(--glacier);
+      padding: 3px 8px;
+      border-radius: 50px;
+      border: 1px solid rgba(171, 215, 247, 0.2);
+    }
+
+    .srv-pro-card h3 {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .srv-pro-card p {
+      font-size: 12px;
+      color: var(--glacier);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .srv-bottom-action {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(171, 215, 247, 0.1);
+      padding-top: 10px;
+    }
+
+    .srv-price-hint {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--lemon);
+    }
+
+    .srv-enquire-btn {
+      background: transparent;
+      border: none;
+      color: var(--glacier);
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: 0.2s;
+    }
+
+    .srv-enquire-btn:hover {
+      color: var(--lemon);
+    }
+
+    /* Portfolio Gallery Grid */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .gal-item {
+      position: relative;
+      height: 210px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 2px solid var(--border-clr);
+      background: var(--card-bg);
+    }
+
+    .gal-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gal-badge {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: var(--lemon);
+      color: var(--navy);
+      font-size: 10.5px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 50px;
+    }
+
+    /* Packages Horizontal Slider */
+    .pkg-row {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+      scrollbar-width: none;
+    }
+    .pkg-row::-webkit-scrollbar { display: none; }
+
+    .pkg-box {
+      min-width: 255px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-clr);
+      border-radius: 22px;
+      padding: 18px;
+      flex-shrink: 0;
+    }
+
+    .pkg-box.highlight {
+      border: 2px solid var(--lemon);
+      background: linear-gradient(160deg, #0e2f63, var(--navy));
+    }
+
+    .pkg-box h4 {
+      font-family: 'Anton', sans-serif;
+      font-size: 22px;
+      letter-spacing: 0.5px;
+      margin: 6px 0 4px;
+    }
+
+    .pkg-box ul {
+      list-style: none;
+      margin: 12px 0 16px;
+    }
+
+    .pkg-box ul li {
+      font-size: 12px;
+      color: var(--glacier);
+      margin-bottom: 7px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pkg-box ul li i {
+      color: var(--lemon);
+    }
+
+    .pkg-btn {
+      width: 100%;
+      padding: 11px;
+      border-radius: 12px;
+      border: none;
+      background: var(--lemon);
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 12.5px;
+      cursor: pointer;
+    }
+
+    /* Booking Card & About */
+    .booking-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-clr);
+      border-radius: 24px;
+      padding: 20px 16px;
+    }
+
+    .input-group {
+      margin-bottom: 12px;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--glacier);
+      margin-bottom: 5px;
+    }
+
+    .input-field {
+      width: 100%;
+      background: var(--navy);
+      border: 1px solid rgba(171, 215, 247, 0.3);
+      color: var(--white);
+      padding: 12px 14px;
+      border-radius: 13px;
+      font-size: 13.5px;
+      outline: none;
+    }
+
+    .input-field:focus {
+      border-color: var(--lemon);
+    }
+
+    .submit-wa {
+      width: 100%;
+      background: var(--lemon);
+      color: var(--navy);
+      border: none;
+      padding: 14px;
+      border-radius: 14px;
+      font-size: 14px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
+      margin-top: 6px;
+      box-shadow: 0 6px 18px rgba(244, 245, 0, 0.25);
+    }
+
+    .about-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border-clr);
+      border-radius: 22px;
+      padding: 18px;
+      margin-top: 16px;
+    }
+
+    .about-box h4 {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .about-box p {
+      font-size: 12.5px;
+      color: var(--glacier);
+      line-height: 1.6;
+    }
+
+    /* ================= STANDARD WEBSITE FOOTER ================= */
+    .site-footer {
+      background: #041229;
+      border-top: 1px solid var(--border-clr);
+      padding: 40px 16px 30px;
+      margin-top: 40px;
+    }
+
+    .footer-container {
+      max-width: 860px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    @media (min-width: 768px) {
+      .footer-container {
+        grid-template-columns: 1.2fr 1fr 1fr;
+      }
+    }
+
+    .footer-col h3 {
+      font-family: 'Anton', sans-serif;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .footer-col p {
+      font-size: 12.5px;
+      color: var(--glacier);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: var(--glacier);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      transition: color 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .footer-links a:hover {
+      color: var(--lemon);
+    }
+
+    .footer-contact-info {
+      list-style: none;
+    }
+
+    .footer-contact-info li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--glacier);
+      margin-bottom: 12px;
+    }
+
+    .footer-contact-info li i {
+      color: var(--lemon);
+      margin-top: 3px;
+    }
+
+    .footer-social-icons {
+      display: flex;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .social-icon-btn {
+      width: 38px;
+      height: 38px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-clr);
+      color: var(--lemon);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      text-decoration: none;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .social-icon-btn:hover {
+      background: var(--lemon);
+      color: var(--navy);
+      transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+      max-width: 860px;
+      margin: 30px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(171, 215, 247, 0.1);
+      text-align: center;
+      font-size: 12px;
+      color: var(--glacier);
+    }
+
+    /* Bottom App Navigation */
+    .app-bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(4, 18, 41, 0.96);
+      backdrop-filter: blur(14px);
+      border-top: 1px solid var(--border-clr);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 6px 12px;
+      z-index: 999;
+    }
+
+    .nav-tab {
+      text-decoration: none;
+      color: var(--glacier);
+      font-size: 10.5px;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .nav-tab i {
+      font-size: 17px;
+    }
+
+    .nav-tab.active, .nav-tab:hover {
+      color: var(--lemon);
+    }
+
+    .nav-fab {
+      background: var(--lemon);
+      color: var(--navy);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 21px;
+      margin-top: -24px;
+      border: 3px solid var(--navy);
+      box-shadow: 0 6px 18px rgba(244, 245, 0, 0.35);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= BILLBOARD HERO START ================= -->
+  <section id="home" class="billboard-hero">
+
+    <div class="bb-nav">
+      <div class="dots-menu" title="Menu">
+        <span></span><span></span>
+        <span></span><span></span>
+      </div>
+      <div class="bb-links">
+        <a href="#services-studio">Studio</a>
+        <a href="#services-events">Events</a>
+        <a href="#portfolio">Gallery</a>
+      </div>
+      <a href="#booking" class="bb-top-cta">
+        <i class="fa-solid fa-calendar-check"></i> Book Order
+      </a>
+    </div>
+
+    <div class="studio-signature">
+      <div class="studio-cursive">Maa Gitanjali</div>
+      <div class="studio-sub-cursive">~ Photography Studio & Lab ~</div>
+    </div>
+
+    <div class="bb-main">
+      <div class="bb-text-area">
+        <div class="tilted-stack">
+          <span class="bb-word-top">CAPTURE</span>
+          <span class="bb-word-highlight">BOLDER</span>
+          <svg class="brush-underline" viewBox="0 0 220 20" fill="none">
+            <path d="M4 14C65 6 145 4 214 9" stroke="#F4F500" stroke-width="6" stroke-linecap="round"/>
+            <path d="M28 18C85 13 135 12 185 15" stroke="#F4F500" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <p class="bb-tagline">
+          Extraordinary weddings, professional lab printing, photobooks, LED frames & camera gear[span_0](start_span)[span_0](end_span).
+        </p>
+
+        <div class="bb-buttons">
+          <a href="#booking" class="btn-navy-pill">
+            <i class="fa-solid fa-bolt"></i> Book Your Order
+          </a>
+          <a href="#portfolio" class="btn-reel">
+            <span class="play-circle"><i class="fa-solid fa-play"></i></span>
+            View Gallery
+          </a>
+        </div>
+      </div>
+
+      <div class="bb-collage">
+        <div class="yellow-sun"></div>
+        <div class="pin-badge"><i class="fa-solid fa-camera"></i></div>
+
+        <div class="main-subject-card">
+          <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=700&q=85" alt="Maa Gitanjali Studio">
+        </div>
+
+        <div class="polaroid-card">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=400&q=80" alt="Royal Moments">
+          <div class="polaroid-caption">Royal Moments</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navy-wave-divider">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path fill="#061B3D" d="M0,45 C320,125 560,-15 960,55 C1200,95 1340,35 1440,20 L1440,120 L0,120 Z"></path>
+      </svg>
+    </div>
+  </section>
+  <!-- ================= BILLBOARD HERO END ================= -->
+
+  <!-- ================= APP CONTENT SECTIONS ================= -->
+  <main class="app-body">
+
+    <!-- SECTION 1: Our Services for Studio -->
+    <section id="services-studio">
+      <div class="section-header">
+        <div>
+          <span class="cursive-label">Lab, Printing & Store</span>
+          <h2>Our Services for Studio</h2>
+        </div>
+        <span class="pill-tag"><i class="fa-solid fa-print"></i> Complete Lab</span>
+      </div>
+
+      <div class="services-pro-grid">
+        <!-- 1. Photo session -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-id-card"></i></div>
+              <span class="srv-badge-tag">Studio Shot</span>
+            </div>
+            <h3>Photo Session (Studio Portraits)</h3>
+            <p>Dedicated studio portraits with online photo upload option for instant printing[span_1](start_span)[span_1](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Instant Session</span>
+            <button class="srv-enquire-btn" onclick="pickService('Photo Session (Studio Portraits)')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 2. Photoshot -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-camera"></i></div>
+              <span class="srv-badge-tag">Prints</span>
+            </div>
+            <h3>Photo Shot (Passport to 12×18)</h3>
+            <p>Standard photo shot services ranging from passport sizes up to 12×18 prints with photo upload[span_2](start_span)[span_2](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Fast Service</span>
+            <button class="srv-enquire-btn" onclick="pickService('Photo Shot (Passport to 12×18)')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 3. Student Passbook Photo -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-user-graduate"></i></div>
+              <span class="srv-badge-tag">Student</span>
+            </div>
+            <h3>Student Passbook Photo</h3>
+            <p>Passport copies and 2UP / B2 sizes specifically formatted for students and official use[span_3](start_span)[span_3](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Same Day</span>
+            <button class="srv-enquire-btn" onclick="pickService('Student Passbook Photo')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 4. All size photo printing -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-print"></i></div>
+              <span class="srv-badge-tag">Printing</span>
+            </div>
+            <h3>All Size Photo Printing</h3>
+            <p>Comprehensive photo printing from wallet size all the way to mega posters[span_4](start_span)[span_4](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">High Quality</span>
+            <button class="srv-enquire-btn" onclick="pickService('All Size Photo Printing')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 5. Silver print -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-gem"></i></div>
+              <span class="srv-badge-tag">Silver Halide</span>
+            </div>
+            <h3>Silver Print Division</h3>
+            <p>Traditional silver halide prints engineered for long-lasting, timeless preservation[span_5](start_span)[span_5](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Classic Finish</span>
+            <button class="srv-enquire-btn" onclick="pickService('Silver Print')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 6. Ink jet printing -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-droplet"></i></div>
+              <span class="srv-badge-tag">Inkjet</span>
+            </div>
+            <h3>Ink Jet Printing</h3>
+            <p>Ultra-vibrant inkjet outputs powered by original non-fading colors and German tech machinery[span_6](start_span)[span_6](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Vibrant Colors</span>
+            <button class="srv-enquire-btn" onclick="pickService('Ink Jet Printing')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 7. Photobook printing -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-book-open"></i></div>
+              <span class="srv-badge-tag">Albums</span>
+            </div>
+            <h3>Photobook Printing</h3>
+            <p>Custom bound story books and professional wedding Karizma albums[span_7](start_span)[span_7](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Luxury Binding</span>
+            <button class="srv-enquire-btn" onclick="pickService('Photobook Printing')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 8. Cup printing -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-mug-hot"></i></div>
+              <span class="srv-badge-tag">Gifting</span>
+            </div>
+            <h3>Cup Printing (Coffee Mugs)</h3>
+            <p>Personalized coffee mugs printed with your favorite photos and custom messages[span_8](start_span)[span_8](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Best Gift</span>
+            <button class="srv-enquire-btn" onclick="pickService('Cup Printing')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 9. All size photo frame -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-image"></i></div>
+              <span class="srv-badge-tag">Frames</span>
+            </div>
+            <h3>All Size Photo Frames</h3>
+            <p>Premium wooden and synthetic photo frames crafted for any wall size[span_9](start_span)[span_9](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Durable Build</span>
+            <button class="srv-enquire-btn" onclick="pickService('All Size Photo Frame')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 10. Acrylic -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-square"></i></div>
+              <span class="srv-badge-tag">Crystal Clear</span>
+            </div>
+            <h3>Acrylic Photo Mounts</h3>
+            <p>Glossy crystal clear acrylic mounts offering a modern, premium gallery look[span_10](start_span)[span_10](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Modern Look</span>
+            <button class="srv-enquire-btn" onclick="pickService('Acrylic Photo Mounts')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 11. Led frame -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-lightbulb"></i></div>
+              <span class="srv-badge-tag">Glowing</span>
+            </div>
+            <h3>LED Frames</h3>
+            <p>Backlit glowing photo frames that illuminate your precious memories brilliantly[span_11](start_span)[span_11](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Glowing Glow</span>
+            <button class="srv-enquire-btn" onclick="pickService('LED Frames')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 12. Sale Division -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-store"></i></div>
+              <span class="srv-badge-tag">Store & Gear</span>
+            </div>
+            <h3>Photographic Materials & Gear</h3>
+            <p>All photographic papers, albums, accessories, DSLR/mirrorless cameras, tripods & heavy duty stands[span_12](start_span)[span_12](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Best Rates</span>
+            <button class="srv-enquire-btn" onclick="pickService('Photographic Materials & Gear')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Our Services for Wedding Planning & Events -->
+    <section id="services-events">
+      <div class="section-header">
+        <div>
+          <span class="cursive-label">Cinematic Shoots</span>
+          <h2>Our Services for Wedding & Events</h2>
+        </div>
+        <span class="pill-tag"><i class="fa-solid fa-video"></i> 4K Cinema</span>
+      </div>
+
+      <div class="services-pro-grid">
+        <!-- 1. Marriages purpose Photography -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-rings-wedding"></i></div>
+              <span class="srv-badge-tag">Wedding</span>
+            </div>
+            <h3>Marriages Purpose Photography</h3>
+            <p>Comprehensive wedding coverage in 5×7, 6×8 & 4×6 portrait sizes with traditional video[span_13](start_span)[span_13](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Custom Package</span>
+            <button class="srv-enquire-btn" onclick="pickService('Marriages Purpose Photography')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 2. Videography -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-video"></i></div>
+              <span class="srv-badge-tag">Video Recording</span>
+            </div>
+            <h3>High-Definition Videography</h3>
+            <p>High-definition event recording capturing every important ritual and celebration[span_14](start_span)[span_14](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">HD Recording</span>
+            <button class="srv-enquire-btn" onclick="pickService('High-Definition Videography')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 3. Candid photo -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-heart"></i></div>
+              <span class="srv-badge-tag">Candid</span>
+            </div>
+            <h3>Candid Photography</h3>
+            <p>Natural unposed memories capturing genuine smiles and emotional highlights[span_15](start_span)[span_15](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Natural Vibe</span>
+            <button class="srv-enquire-btn" onclick="pickService('Candid Photography')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 4. Cinematic Videography -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-film"></i></div>
+              <span class="srv-badge-tag">4K Cinematic</span>
+            </div>
+            <h3>Cinematic Videography</h3>
+            <p>Movie-style event editing, teaser reels and cinematic drone coverage[span_16](start_span)[span_16](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Movie Style</span>
+            <button class="srv-enquire-btn" onclick="pickService('Cinematic Videography')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 5. Kids photography -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-baby"></i></div>
+              <span class="srv-badge-tag">Baby Shoot</span>
+            </div>
+            <h3>Kids Photography</h3>
+            <p>Dedicated newborn and kids baby shoots in 8×10 to 10×15 size prints[span_17](start_span)[span_17](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Cute Themes</span>
+            <button class="srv-enquire-btn" onclick="pickService('Kids Photography')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- 6. Outdoor Photography -->
+        <div class="srv-pro-card">
+          <div>
+            <div class="srv-top-row">
+              <div class="srv-icon-box"><i class="fa-solid fa-mountain-sun"></i></div>
+              <span class="srv-badge-tag">Outdoor</span>
+            </div>
+            <h3>Outdoor Photography</h3>
+            <p>Natural location portraitures and pre-wedding cinematic shoots at scenic outdoor spots[span_18](start_span)[span_18](end_span).</p>
+          </div>
+          <div class="srv-bottom-action">
+            <span class="srv-price-hint">Scenic Shoots</span>
+            <button class="srv-enquire-btn" onclick="pickService('Outdoor Photography')">Enquire <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section id="portfolio">
+      <div class="section-header">
+        <div>
+          <span class="cursive-label">Handpicked Frames</span>
+          <h2>Our Portfolio</h2>
+        </div>
+        <span class="pill-tag"><i class="fa-solid fa-images"></i> Latest Work</span>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gal-item">
+          <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=600&q=80" alt="Bridal">
+          <span class="gal-badge"><i class="fa-solid fa-heart"></i> Bridal Glow</span>
+        </div>
+        <div class="gal-item">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" alt="Couple">
+          <span class="gal-badge"><i class="fa-solid fa-camera-retro"></i> Candid Story</span>
+        </div>
+        <div class="gal-item">
+          <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=600&q=80" alt="Wedding">
+          <span class="gal-badge"><i class="fa-solid fa-rings-wedding"></i> Royal Vows</span>
+        </div>
+        <div class="gal-item">
+          <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80" alt="Camera">
+          <span class="gal-badge"><i class="fa-solid fa-video"></i> 4K Studio Gear</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section id="packages">
+      <div class="section-header">
+        <div>
+          <span class="cursive-label">Tailored For You</span>
+          <h2>Shoot Packages</h2>
+        </div>
+        <span class="pill-tag"><i class="fa-solid fa-tags"></i> Swipe</span>
+      </div>
+
+      <div class="pkg-row">
+        <div class="pkg-box">
+          <span class="gal-badge" style="position:static;"><i class="fa-solid fa-star"></i> STARTER</span>
+          <h4>Event Special</h4>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Full HD Photo & Video</li>
+            <li><i class="fa-solid fa-check"></i> 100+ Edited Photos</li>
+            <li><i class="fa-solid fa-check"></i> 1 Highlight Reel</li>
+          </ul>
+          <button class="pkg-btn" onclick="pickService('Event Special Package')"><i class="fa-brands fa-whatsapp"></i> Ask Price on WhatsApp</button>
+        </div>
+
+        <div class="pkg-box highlight">
+          <span class="gal-badge" style="position:static;"><i class="fa-solid fa-fire"></i> BESTSELLER</span>
+          <h4>Royal Wedding Pro</h4>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Candid + Traditional Team</li>
+            <li><i class="fa-solid fa-check"></i> 4K Drone + Cinema Teaser</li>
+            <li><i class="fa-solid fa-check"></i> Luxury Karizma Album</li>
+          </ul>
+          <button class="pkg-btn" onclick="pickService('Royal Wedding Pro Package')"><i class="fa-brands fa-whatsapp"></i> Book Wedding Package</button>
+        </div>
+
+        <div class="pkg-box">
+          <span class="gal-badge" style="position:static;"><i class="fa-solid fa-heart"></i> COUPLE</span>
+          <h4>Pre-Wedding Cinema</h4>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Full Day Outdoor Shoot</li>
+            <li><i class="fa-solid fa-check"></i> 4K Cinematic Song Video</li>
+            <li><i class="fa-solid fa-check"></i> 50 Retouched Portraits</li>
+          </ul>
+          <button class="pkg-btn" onclick="pickService('Pre-Wedding Cinema Package')"><i class="fa-brands fa-whatsapp"></i> Ask Price on WhatsApp</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking & About Studio -->
+    <section id="booking">
+      <div class="section-header">
+        <div>
+          <span class="cursive-label">Instant Confirmation</span>
+          <h2>Book Order / Shoot</h2>
+        </div>
+        <span class="pill-tag"><i class="fa-brands fa-whatsapp"></i> WhatsApp</span>
+      </div>
+
+      <div class="booking-card">
+        <div class="input-group">
+          <label><i class="fa-solid fa-user"></i> Aapka Naam</label>
+          <input type="text" id="clientName" class="input-field" placeholder="Apna naam likhein..." />
+        </div>
+
+        <div class="input-group">
+          <label><i class="fa-solid fa-camera"></i> Select Service / Item</label>
+          <select id="serviceSelect" class="input-field">
+            <option value="Photo Session (Studio Portraits)">Photo Session (Studio Portraits)</option>
+            <option value="Photo Shot (Passport to 12×18)">Photo Shot (Passport to 12×18)</option>
+            <option value="Student Passbook Photo">Student Passbook Photo</option>
+            <option value="All Size Photo Printing">All Size Photo Printing</option>
+            <option value="Silver Print">Silver Print</option>
+            <option value="Ink Jet Printing">Ink Jet Printing</option>
+            <option value="Photobook Printing">Photobook Printing</option>
+            <option value="Cup Printing">Cup Printing</option>
+            <option value="All Size Photo Frame">All Size Photo Frame</option>
+            <option value="Acrylic Photo Mounts">Acrylic Photo Mounts</option>
+            <option value="LED Frames">LED Frames</option>
+            <option value="Photographic Materials & Gear">Photographic Materials & Gear</option>
+            <option value="Marriages Purpose Photography">Marriages Purpose Photography</option>
+            <option value="High-Definition Videography">High-Definition Videography</option>
+            <option value="Candid Photography">Candid Photography</option>
+            <option value="Cinematic Videography">Cinematic Videography</option>
+            <option value="Kids Photography">Kids Photography</option>
+            <option value="Outdoor Photography">Outdoor Photography</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label><i class="fa-solid fa-calendar"></i> Event Date / Requirement</label>
+          <input type="date" id="shootDate" class="input-field" />
+        </div>
+
+        <div class="input-group">
+          <label><i class="fa-solid fa-location-dot"></i> Location / Address</label>
+          <input type="text" id="shootCity" class="input-field" placeholder="Shehar ya address likhein..." />
+        </div>
+
+        <button class="submit-wa" onclick="bookOnWhatsApp()">
+          <i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i> Send Order on WhatsApp
+        </button>
+      </div>
+
+      <div class="about-box">
+        <h4><i class="fa-solid fa-circle-info"></i> About Maa Gitanjali Photography & Lab (Estd: 1998)</h4>
+        <p>Hum aapse judi har haseen aur yaadgaar moments ko hamesha ke liye albums, LED frames aur digital prints me kaid karne me mahir hain[span_19](start_span)[span_19](end_span). Hamari lab latest German technology machinery aur original non-fading colors ka estemal karti hai taaki aapki photos hamesha nayi jaisi chamakti rahein[span_20](start_span)[span_20](end_span).</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= PROFESSIONAL WEBSITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <!-- Col 1: About / Brand -->
+      <div class="footer-col">
+        <h3>Maa Gitanjali Studio</h3>
+        <p>Professional photography studio, custom photo printing lab, wedding cinema & framing center dedicated to preserving your best memories in Saharsa.</p>
+        <div class="footer-social-icons">
+          <a href="https://www.instagram.com/_maa_gitanjali_studio_?vrfl=MTgxa3Y3dGlrMXJ2Yw==" target="_blank" class="social-icon-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://share.google/OxkFMKeRGfRyDrwm2" target="_blank" class="social-icon-btn" title="Google Business Profile"><i class="fa-solid fa-map-location-dot"></i></a>
+          <a href="https://wa.me/919934444758" target="_blank" class="social-icon-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#home"><i class="fa-solid fa-chevron-right" style="font-size:10px; color:var(--lemon);"></i> Home Billboard</a></li>
+          <li><a href="#services-studio"><i class="fa-solid fa-chevron-right" style="font-size:10px; color:var(--lemon);"></i> Studio & Printing Services</a></li>
+          <li><a href="#services-events"><i class="fa-solid fa-chevron-right" style="font-size:10px; color:var(--lemon);"></i> Wedding & Event Shoots</a></li>
+          <li><a href="#portfolio"><i class="fa-solid fa-chevron-right" style="font-size:10px; color:var(--lemon);"></i> Work Portfolio</a></li>
+          <li><a href="#booking"><i class="fa-solid fa-chevron-right" style="font-size:10px; color:var(--lemon);"></i> Direct Order Booking</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Contact Details -->
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <ul class="footer-contact-info">
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Phone / WhatsApp:</strong><br>
+              <a href="tel:+919934444758" style="color:var(--glacier); text-decoration:none;">+91 99344 44758</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Email Address:</strong><br>
+              <a href="mailto:gitanjalipancard@gmail.com" style="color:var(--glacier); text-decoration:none;">gitanjalipancard@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Location:</strong><br>
+              Saharsa, Bihar, India
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Maa Gitanjali Photography Studio & Lab. All Rights Reserved. Designed with <i class="fa-solid fa-heart" style="color:var(--lemon);"></i> for Saharsa.</p>
+    </div>
+  </footer>
+
+  <!-- App Bottom Navigation -->
+  <nav class="app-bottom-nav">
+    <a href="#home" class="nav-tab active" onclick="activateTab(this)">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+    <a href="#services-studio" class="nav-tab" onclick="activateTab(this)">
+      <i class="fa-solid fa-print"></i>
+      <span>Studio</span>
+    </a>
+    <a href="#booking" class="nav-fab" title="Book Now">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="#services-events" class="nav-tab" onclick="activateTab(this)">
+      <i class="fa-solid fa-camera"></i>
+      <span>Events</span>
+    </a>
+    <a href="#packages" class="nav-tab" onclick="activateTab(this)">
+      <i class="fa-solid fa-tags"></i>
+      <span>Packages</span>
+    </a>
+  </nav>
+
+  <script>
+    const STUDIO_NUMBER = "919934444758";
+
+    function activateTab(el) {
+      document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+      el.classList.add('active');
+    }
+
+    function pickService(name) {
+      const sel = document.getElementById('serviceSelect');
+      let exists = false;
+      for (let i = 0; i < sel.options.length; i++) {
+        if (sel.options[i].value === name) {
+          sel.selectedIndex = i;
+          exists = true;
+          break;
+        }
+      }
+      if (!exists) {
+        const opt = document.createElement('option');
+        opt.value = name;
+        opt.text = name;
+        sel.add(opt);
+        sel.value = name;
+      }
+      document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function bookOnWhatsApp() {
+      const name = document.getElementById('clientName').value.trim();
+      const service = document.getElementById('serviceSelect').value;
+      const date = document.getElementById('shootDate').value;
+      const city = document.getElementById('shootCity').value.trim();
+
+      if (!name) {
+        alert("Kripya apna naam likhein!");
+        document.getElementById('clientName').focus();
+        return;
+      }
+
+      const text = `*New Order / Enquiry - Maa Gitanjali Studio*%0A%0A` +
+                   `👤 *Name:* ${name}%0A` +
+                   `📦 *Service/Item:* ${service}%0A` +
+                   `📅 *Date:* ${date || 'Not decided'}%0A` +
+                   `📍 *Location:* ${city || 'Not specified'}%0A%0A` +
+                   `Please share price and details.`;
+
+      window.open(`https://wa.me/${STUDIO_NUMBER}?text=${text}`, '_blank');
+    }
+  </script>
+</body>
+</html>
